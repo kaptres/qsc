@@ -1,0 +1,4 @@
+collection2_family1
+(family1-geom-00)(family1-geom-01)(family1-geom-02)
+collection2_family2
+(family2-geom-00)(family2-geom-01)(family2-geom-02)

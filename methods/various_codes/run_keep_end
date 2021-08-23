@@ -1,0 +1,16 @@
+#!/bin/csh -f
+
+foreach i (*.dat)
+	if ($i == mom3Draw.dat) continue
+	if ($i == mom3Dx.dat) continue
+	if ($i == mom3D.dat) continue
+	if ($i == momPK.dat) continue
+	if ($i == momL.dat) continue
+	if ($i == mom.dat) continue
+	if ($i == momaff.dat) continue
+	if ($i == momContrast.dat) continue
+	if ($i == chiral.dat) continue
+	if ($i == symm.dat) continue
+	sed -f sed_keep_end $i > tempfile
+	mv -f tempfile $i
+end
