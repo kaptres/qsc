@@ -1,0 +1,5 @@
+Paper Title: SHREC’21: Quantifying shape complexity
+Authors: Mazlum Ferhat Arslan, Alexandros Haridis, Paul L. Rosin, Sibel Tari, Charlotte Brassey, James D. Gardiner, Asli Genctav, Murat Genctav
+OS: tested on Ubuntu 18.04.5 LTS
+
+The codes are tested on MATLAB(R2017a) and gcc version 7.5.0
