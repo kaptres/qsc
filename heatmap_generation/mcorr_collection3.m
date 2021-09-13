@@ -42,7 +42,7 @@ c = colorbar; set (c, 'Location', 'manual'); set (c, 'Position', [0.92 0.12 .03 
 pause (1); 
 children = get (gcf, 'children'); 
 set (children(3), 'TickLabelInterpreter', 'latex', 'FontSize', 12, 'XAxisLocation', 'top');
-pause (.1); export_fig c3_cat_corr.pdf; 
+pause (.1); saveas (gcf, 'c3_cat_corr.png'); 
 
 h = HeatMap (corr_matrix_alldata, 'colormap', 'parula', 'rowlabels', names_rev, 'columnlabels', names, 'columnlabelsrotate', 45, 'DisplayRange', 2);
 %h.addTitle ('collection3: correlations over all shapes');
@@ -51,4 +51,4 @@ c = colorbar; set (c, 'Location', 'manual'); set (c, 'Position', [0.92 0.12 .03 
 pause (1); 
 children = get (gcf, 'children'); 
 set (children(3), 'TickLabelInterpreter', 'latex', 'FontSize', 12, 'XAxisLocation', 'top');
-pause (.1); export_fig c3_all_corr.pdf; 
+pause (.1); saveas (gcf, 'c3_all_corr.png'); 

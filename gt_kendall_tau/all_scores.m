@@ -23,14 +23,18 @@ for file=dir('results/*.txt')'
     [c21, c22, G1, G2]      = collection2_scores (filename);
     [c31, c32, c33, c34]    = collection3_scores (filename);
     
-    col11{i} = sum(cp)/150;
-    col12{i} = sum(cm)/150;
-    col13{i} = sum(sp)/150;
-    col14{i} = sum(sm)/150;
+    % Collection 1 scores of the methods
+    col11{i} = sum(cp)/150; % scores for additively perturbed cubes
+    col12{i} = sum(cm)/150; % scores for subtractively perturbed cubes
+    col13{i} = sum(sp)/150; % scores for additively perturbed spheres
+    col14{i} = sum(sm)/150; % scores for subtractively perturbed spheres
 
-    G1s{i}   = G1;
-    G2s{i}   = G2;
+    % Collection 2 scores of the methods
+    G1s{i}   = G1;          % scores for the first family
+    G2s{i}   = G2;          % scores for the second family
 
+    % Collection 3 scores of the methods
+    % (two GTs: mean and std, category-wise and across all shapes)
     col3s{i} = [c31 c32 c33 c34];
 
 

@@ -4,6 +4,10 @@ This will generate a source code for a LaTeX table with hard-coded reference inf
 
 To acquire results call 'sample_run.m' which by default generates the results for the additively perturbed sets of Collection 1.
 The other results can be acquired by uncommenting the related lines.
+By default, 'sample_run.m' outputs to stdout the LaTeX codes (without the coloring) of
+    Table 1 & Table 2 of the paper when 'collection1_scores.m' is called,
+    Table 3 of the paper when 'collection2_scores.m' is called,
+    Table 4 of the paper when 'collection3_scores.m' is called.
 
 ------------------------------------------------------------------------------------------
 
